@@ -248,7 +248,7 @@ crypto_sources := \
   src/crypto/x509v3/v3_skey.c\
   src/crypto/x509v3/v3_utl.c\
 
-linux_aarch64_sources := \
+linux_arm64_sources := \
   linux-aarch64/crypto/chacha/chacha-armv8.S\
   linux-aarch64/crypto/fipsmodule/aesv8-armx64.S\
   linux-aarch64/crypto/fipsmodule/armv8-mont.S\
@@ -274,11 +274,6 @@ linux_arm_sources := \
   linux-arm/crypto/test/trampoline-armv4.S\
   src/crypto/curve25519/asm/x25519-asm-arm.S\
   src/crypto/poly1305/poly1305_arm_asm.S\
-
-linux_ppc64le_sources := \
-  linux-ppc64le/crypto/fipsmodule/aesp8-ppc.S\
-  linux-ppc64le/crypto/fipsmodule/ghashp8-ppc.S\
-  linux-ppc64le/crypto/test/trampoline-ppc.S\
 
 linux_x86_sources := \
   linux-x86/crypto/chacha/chacha-x86.S\
@@ -316,4 +311,3 @@ linux_x86_64_sources := \
   linux-x86_64/crypto/fipsmodule/x86_64-mont5.S\
   linux-x86_64/crypto/test/trampoline-x86_64.S\
   src/crypto/hrss/asm/poly_rq_mul.S\
-
